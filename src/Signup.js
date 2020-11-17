@@ -23,7 +23,7 @@ export default function Signup() {
       setError("")
       setLoading(true)
       await signup(emailRef.current.value, passwordRef.current.value)
-      history.push("/")
+      
     } catch {
       setError("Failed to create an account")
     }
@@ -36,6 +36,8 @@ export default function Signup() {
       <Card>
         <Card.Body>
           <h2 className="text-center mb-4">Sign Up</h2>
+          <h5 className="text-center mb-4">Please allow 10-20 seconds after clicking the verification link in your UNC email for it to update</h5>
+          <h5 className="text-center mb-4">Hit the enter key 3-4 times when submitting to allow the form to gather info</h5>
           {error && <Alert variant="danger">{error}</Alert>}
           <Form onSubmit={handleSubmit}>
             <Form.Group id="email">
