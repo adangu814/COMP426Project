@@ -1,5 +1,5 @@
 .NavbarItems {
-    background: linear-gradient(90deg, rgb(35, 15, 218) 0%, rgb(163, 10, 252) 100%);
+    background: #4B9CD3;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -11,7 +11,21 @@ body {
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
 }
-
+.insane {
+    background-color:#4B9CD3;   
+          font-size: 160%;
+          border: 20px solid #06d4d4;
+          padding: 30px;
+          font-weight:bold;
+}
+.insane2 {
+   background-color: #4B9CD3;
+            
+          font-size: 160%;
+          border: 20px solid #0960d3;
+          padding: 30px;
+          font-weight:bold;
+}
 .main_card {
 	color: #fff;
 	width: 760px;
@@ -21,12 +35,10 @@ body {
 	display: -ms-flexbox;
 	display: flex;
 	max-width: 770px;
-	background: #00C9FF; 
-	background: -webkit-linear-gradient(to right,#7BAFD4,#00009c);
+	background: #00aada; 
 	background: -webkit-gradient(linear, left top, right top, from(#92FE9D), to(#00C9FF));
 	background: -webkit-linear-gradient(left, #92FE9D, #00C9FF);
 	background: -o-linear-gradient(left, #92FE9D, #00C9FF);
-	background: linear-gradient(to right,#7BAFD4,#00009c); 
 	-webkit-box-shadow: 0 0 40px rgba(0,0,0,0.3); 
 	        box-shadow: 0 0 40px rgba(0,0,0,0.3);
 }
@@ -64,7 +76,7 @@ body {
 }
 
 .PG {
-	background: #9299fe;
+	background: #06d4d4;
 	font-size:20px;
 }
 
@@ -86,7 +98,7 @@ a {
         height: 150px;
         width: 50%;
         margin-bottom:20px;
-	    box-shadow: 0 0 200px rgba(215, 14, 255, 0.3);
+	    
       
 }
 #h {
@@ -94,7 +106,7 @@ a {
     height: 150px;
     width: 50%;
     margin-bottom:20px;
-	box-shadow: 0 0 500px rgba(0, 224, 240, 0.3);
+	
 }
 button {
 	color: #fff;
@@ -103,8 +115,8 @@ button {
 	outline: none;
 	font-size: 12px;
 	margin-top: 30px;
-	margin-left: 10px;
-	background: #990d8d;
+	margin-left: 0px;
+	background: #0965dd;
 	border-radius: 12px;
 	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.2);
 	        box-shadow: 0 0 20px rgba(0,0,0,0.2);
@@ -244,7 +256,10 @@ button {
         background-color: #7577FA;
         border-radius: 0;
     }
-
+    #b {
+        font-size:40px;
+        color:white;
+    }
     .navbar-logo {
         position: absolute;
         top: 0;
