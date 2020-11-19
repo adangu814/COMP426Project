@@ -114,18 +114,8 @@ export default function Navbar() {
       for (let i = 0; i < new_data.length; i++) {
           cards.append(renderHeroCard(new_data[i]));
           if (i === new_data.length - 1) {
-            $("#r").replaceWith(`<div id = "r" style = "background-color:rgb(29, 55, 170);
-           
-          font-size: 160%;
-          border: 20px solid rgb(167, 10, 167);
-          padding: 30px;
-          font-weight:bold;">Average Rating: ${averageRating}/5</div>`)
-            $("#h").replaceWith(`<div id = "h" style =" background-color:rgb(29, 105, 167);
-            
-          font-size: 160%;
-          border: 20px solid rgb(74, 13, 155);
-          padding: 30px;
-          font-weight:bold;">Average Difficulty: ${averageDifficulty}/5</div>`)
+            $("#r").replaceWith(`<div id = "r" class = "insane">Average Rating: ${averageRating}/5</div>`)
+            $("#h").replaceWith(`<div id = "h" class = "insane2">Average Difficulty: ${averageDifficulty}/5</div>`)
           }
       }
     
@@ -163,7 +153,7 @@ export default function Navbar() {
       document.getElementById('${hero.id}').onclick = clicka;
       function clicka(event) {
         document.getElementById('${hero.id}').parentNode.remove();
-        var myWindow = window.open("Delete/?id=${hero.id}", "Delete", "width=200,height=100");
+        var myWindow = window.open("Delete/?cookie=cookie&id=${hero.id}", "Delete", "width=200,height=100");
         setTimeout(function(){ myWindow.close() }, 3000);
         setTimeout(function(){ window.location.href = "/"}, 3000);
       }
@@ -226,7 +216,8 @@ export default function Navbar() {
       
       <div>
       <nav className="NavbarItems">
-        <h1 className="nav-bar-logo">RateMyProfessorUNC<i className="fab fa-react"></i></h1>
+        <h2 className="nav-bar-logo">RateMyProfessorUNC<i className="fab fa-react"></i></h2>
+        <em className="nav-bar-logo">For UNC students. By UNC students.<i className="fab fa-react"></i></em>
         <Autocomplete
         value={value}
         onChange={(event, newValue) => {
@@ -234,11 +225,11 @@ export default function Navbar() {
           
 
         }}
-  id="combo-box-demo"
+  id=""
   options={top100Films}
   getOptionLabel={(option) => option}
   style={{ width: 300, backgroundColor: "white"}}
-  renderInput={(params) => <TextField {...params} label="Search a Professor" variant="outlined" />}
+  renderInput={(params) => <TextField {...params} placeholder = "Search professors here" variant="outlined" />}
 />
 <div>
 </div>
@@ -252,7 +243,7 @@ export default function Navbar() {
       <div id = "r"></div>
       <div id = "h"></div>
       <div class = "hello">
-        <h1>Hit the X in the Search Bar to update the search bar</h1>
+        <h1>Hit the X in the Search Bar to begin!</h1>
       </div>
       <>
       <Card id = "m">
