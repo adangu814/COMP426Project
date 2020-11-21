@@ -1,0 +1,34 @@
+body {
+    color:  #13294B !important;
+}
+
+#d {
+    background-color: #4B9CD3;
+    column-width: 600px;
+}
+#z {
+    text-align: center;
+    font-size: 50px;
+}
+#pl {
+    height: 600; 
+    width: 800;
+    margin-left:20px;
+}
+.radioButton{
+    margin-right: 27.75px;
+}
+.radioLabel{
+    margin-right: 30px;
+    font-size: 20px;
+}
+.radioButton2{
+    margin-left: 7px;
+    margin-right: 35px;
+}
+.checkbox{
+    margin-right: 10px;
+}
+#textbox {
+    width:1050px;
+}
