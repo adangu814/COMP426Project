@@ -2,15 +2,15 @@ import firebase from "firebase";
 import "firebase/auth"
 
 const config = {
-    apiKey: "AIzaSyA4BerkNz0aKaJPI8g4fXjujO9WzCsydRQ",
-    authDomain: "hosting-demo-ab9bb.firebaseapp.com",
-    databaseURL: "https://hosting-demo-ab9bb.firebaseio.com",
-    projectId: "hosting-demo-ab9bb",
-    storageBucket: "hosting-demo-ab9bb.appspot.com",
-    messagingSenderId: "853968662016",
-    appId: "1:853968662016:web:37be375349b58b029cb2e5",
-    measurementId: "G-0QWCWG9MBX"
-}
+  apiKey: "AIzaSyBOzmUnLyXKmpdizByjhZqhwQ9TU8xejj0",
+  authDomain: "hosting-demo-62001.firebaseapp.com",
+  databaseURL: "https://hosting-demo-62001.firebaseio.com",
+  projectId: "hosting-demo-62001",
+  storageBucket: "hosting-demo-62001.appspot.com",
+  messagingSenderId: "224261366308",
+  appId: "1:224261366308:web:417b650798c9c8db9caeb1",
+  measurementId: "G-VYDK7YHD9Z"
+};
 
 const fire = firebase.initializeApp(config);
 export const auth = fire.auth();
